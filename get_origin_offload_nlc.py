@@ -125,7 +125,7 @@ def main():
                         'nlc_4xx': nlc_4xx}
 
             # Fetch RT stats
-            fullURL_log = "/receiver/v1/http/ZaVnC4dhaV0AUzY94VouvZOLQ47923eHhrWvLYW75rAed7dyhQ1o4_pkh-M18MFDc9Us1MdIDheTHlLJh3knjgFZvqgyqspYUICM1Q5wya6KcWDKhAF_rg=="
+            fullURL_log = "YOUR HTTP LOGGING ENDPOINT URL (Sumologic can create HTTP endpoints)"
             # print "full URL RT: " + fullURL_RT + "\n"
             headers = {"Content-type": "application/json", "Accept": "text/plain"}
             connection_log = http.client.HTTPSConnection("endpoint3.collection.us2.sumologic.com", 443)
