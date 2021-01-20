@@ -88,11 +88,11 @@ def main():
         while (j < len(StatsOI["Data"])):
             try:
                 for p, q in list(StatsOI["Data"][j]['aggregated'].items()):
-                    if p == "3xC9T1AR8N8ElYpfSItGZs--F_Hulu_Backend_East":
+                    if p == "<SID>-<East coast Backend Name>":
                         for o in list(q.values()):
                             east_origin_bytes += o['resp_body_bytes'] + o['resp_header_bytes']
                             east_origin_req += o['responses']
-                    elif p == "3xC9T1AR8N8ElYpfSItGZs--F_Hulu_Backend_West":
+                    elif p == "<SID>-<West coast Backend Name":
                         for o in list(q.values()):
                             west_origin_bytes += o['resp_body_bytes'] + o['resp_header_bytes']
                             west_origin_req += o['responses']
